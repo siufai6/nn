@@ -1,4 +1,8 @@
 #  code based on https://iamtrask.github.io/2015/07/12/basic-python-network/
+
+# this is to solve exercise in http://neuralnetworksanddeeplearning.com/chap1.html
+# given 10 input nodes 0..9 with output that converts the numbers to binary values of 4 bits.
+# derive weight for each of the 4 output nodes
 import numpy as np
 
 # sigmoid function
@@ -31,8 +35,6 @@ all_y=np.array( [[0,0,0,0],
                 [1,0,0,0],
                 [1,0,0,1]])
 
-#all_y=all_y.T
-#y = np.array([[0,0,0,0,0,0,0,0,1,1]]).T
 
 # seed random numbers to make calculation
 # deterministic (just a good practice)
